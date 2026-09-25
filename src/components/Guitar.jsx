@@ -29,3 +29,9 @@ const{id,name,image,description,price} = guitar;
    
   )
 }
+
+
+
+
+//limitantes: la cantidad no puede ser menor a cero, si llega a cero lo elimina de la lista yno pueden comprar mas de 5 guitarras y el eliminar, va a eliminar la guitarra seleccionada y hacer que funcione el vaciar del carrito
+//regla: todo lo logico (funciones, etc ) debe estar en app.jsx
