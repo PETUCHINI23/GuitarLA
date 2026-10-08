@@ -1,16 +1,13 @@
-import { useMemo } from "react";
-
 export default function Header({ 
   cart, 
   increaseQuantity, 
   decreaseQuantity, 
   removeFromCart, 
   clearCart, 
-  cartTotal 
+  cartTotal,
+  isEmpty 
 }) {
     
-  const isEmpty = useMemo(() => cart.length === 0, [cart]);
-
   return (
     <header className="py-5 header">
       <div className="container-xl">
@@ -40,7 +37,7 @@ export default function Header({
                         </tr>
                       </thead>
                       <tbody>
-                        {/* Aquí iteramos sobre el carrito */}
+                        {}
                         {cart.map((guitar) => (
                           <tr key={guitar.id}>
                             <td>
